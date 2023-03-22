@@ -1,0 +1,361 @@
+*{
+padding: 0px;
+margin: 0px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body{
+background-image: url(/imgs/pomodoro.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.mobile-container {
+  max-width: 450px;
+  margin: auto;
+  background-color: #555;
+  height: 510px;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 30px 70px;
+  text-decoration: none;
+  font-size: 70px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: sticky;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #6B0504;
+  color: white;
+}
+
+/* ------------------------------------------------------------ */
+
+
+.card {
+  background-image: url(/imgs/background.jpeg);
+  color: #FBFFFE;
+  padding: 1rem;
+  height: auto;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  text-align: center;
+}
+.card2 {
+  background-image: url(/imgs/background.jpeg);
+  color: #FBFFFE;
+  padding: 1rem;
+  margin: 2rem;
+  height: auto;
+  
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 1/1;
+  grid-column: 2/4;
+  text-align: center;
+}
+
+.card4 {
+  display: grid;
+  max-width: 1200px;
+  margin:auto;
+  grid-gap: 5rem;
+  padding-top:30px;
+  grid-column: 1/4;
+  
+}
+.card5{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(3,1fr);
+}
+
+.insidebox1{
+  height: 200px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.insidebox2{
+  display: grid;
+  grid-area: 2/2/2/1;
+  text-align: center;
+  font-size: 60px;
+}
+
+.insidebox3{
+  display: grid;
+  grid-area:  3/2/4/1;
+  font-size: 60px;
+ 
+}
+
+.insidebox4{
+  display: grid;
+  grid-area:  2/2/2/2;
+  font-size: 60px;
+}
+
+.insidebox5{
+  display: grid;
+  grid-area: 3/3/3/2;
+  font-size: 60px;
+}
+.insidebox6{
+  display: grid;
+  grid-area:  2/3/3/4;
+  
+}
+
+.insidebox7{
+  display: grid;
+  grid-area:  3/3/4/3;
+  
+}
+
+
+
+.cards {
+  display: grid;
+  max-width: 1200px;
+  margin:auto;
+  grid-gap: 5rem;
+  padding-top:30px;
+}
+.cards2 {
+  
+  display: grid;
+  max-width: 1200px;
+  margin:auto;
+  grid-gap: 5rem;
+  padding-top:30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+}
+
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); padding: 10px;}
+}
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); padding: 10px; }
+}
+@media (min-width: 600px) {
+  .cards2 { grid-template-columns: repeat(2, 1fr); padding: 10px;}
+}
+
+@media (min-width: 900px) {
+  .cards2 { grid-template-columns: repeat(3, 1fr); padding: 10px; }
+}
+
+
+
+.boxing{
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(4, 1fr);
+}
+.asd{
+  max-width: 1200px;
+  margin:auto;
+  grid-gap: 5rem;
+  padding-top:30px;
+  height: 200px;
+  background-color: #252525;
+  color: white;
+  text-align: center;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.clock{ height: 450px; width: auto; border-radius: 10%; -webkit-border-radius: 10%; -moz-border-radius: 10%; -ms-border-radius: 10%; -o-border-radius: 10%;
+}
+/* ---------------------------------------------------------------------- */
+
+h1{
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+.topnav{
+text-align: center;
+position: sticky;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+.pizzaa{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.pizzabox{
+  background-color: black;
+  object-fit:contain;
+ margin: 20px;
+  border-radius: 8%;
+  -webkit-border-radius: 8%;
+  -moz-border-radius: 8%;
+  -ms-border-radius: 8%;
+  -o-border-radius: 8%;
+}
+
+
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 1em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+.button2{
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 75%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #121315;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+button {
+  background-color: #A3320B;
+  color: #ffffff;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i {
+  color: #bac6d9;
+}
+
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  color: #27bcda;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+
+}
