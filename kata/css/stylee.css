@@ -1,0 +1,21 @@
+.grid{
+    display: grid;
+}
+.img{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    align-self: center;
+
+}
+
+.one{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+
+a{
+    color: white;
+}

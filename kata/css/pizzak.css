@@ -1,0 +1,28 @@
+#ar{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 30px;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    margin: 5px;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+  
+.zoom:hover {
+    transform: scale(1.1); 
+}
